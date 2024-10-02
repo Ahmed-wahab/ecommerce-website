@@ -1,0 +1,104 @@
+:root{
+    --bodyBG: rgb(219, 217, 217);
+    --bodyfont: rgb(31, 30, 30);
+    --blue: #9fc5ef;
+    --blue-button: #1976d2;
+    --red-button: #e41d43;
+    --icons: #40464d;
+    --footer-bg: #212539;
+    --white : #fff;
+
+}
+.black{
+    --bodyBG: black;
+    --bodyfont: white;
+}
+
+/*///////
+My Classes
+///////*/
+.border{
+    border:4px solid red
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+/*///////
+generel style
+///////*/
+*{
+    margin: 0;
+    padding: 0  ;
+}
+
+html{
+    font-family: system-ui, -apple-system, 'Roboto',sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main{
+    width: 80%;
+    margin-inline: auto;
+}
+@media (width < 600px) {
+    main{
+        width: 100%;
+    }
+    
+}
+
+*, *:before, *:after {box-sizing: inherit;} 
+
+
+
+::-webkit-scrollbar{
+    width: 0.88rem;
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #292c3b;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: #d4d4d8;
+}
+::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* for Firefox */
+html {scrollbar-color: #9e4673 #3d4a59;} 
+/*///////
+html elements
+///////*/
+
+a,button{
+    all: unset;
+    display: inline-block;
+    transition: 0.2s;
+}
+button:active, 
+a:active{
+    scale: 0.9;
+}
+
+button:hover, a:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+.fa-solid{
+    color: var(--icons);
+}
+button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+    scale: 1;
+}
